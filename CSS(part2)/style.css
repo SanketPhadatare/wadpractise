@@ -1,0 +1,107 @@
+/* 1.Universal selector */
+*{
+    font-family: 'Courier New';
+    
+}
+/* 2.Element Selector */
+h1,h3{
+    color: orange;
+}
+/* 3.ID selector */
+#login{
+    background-color: black;
+    color: white;
+}
+#signup{
+    background-color: white;
+    color: black;
+}
+/* 4.class selector */
+.a{
+    background-color: red;
+    color: white;
+}
+/* 5.Descendent selector */
+p a{
+    color: yellow;
+}
+#a a{
+    color: yellow;
+}
+nav ul li{
+    color: blueviolet;
+}
+
+/* 6.Sibling Combinator */
+p+h3{
+    color:greenyellow;
+}
+button+button{
+    color: red;
+    background-color: blue;
+}
+/* 7.Child Combinator */
+Div>input{
+    background-color: red;
+}
+/* 8.Attribute Selector */
+input[type='text']{
+    color:black;
+}
+input[type='password']{
+    color:black;
+}
+input[type]{
+    background-color: blue;
+}
+
+#myid p{
+    color: green;
+}
+/* 9.hover class */
+button:hover{
+    background-color: black;
+    color: white;
+}
+a:hover{
+    text-decoration: none;
+}
+
+/* 10.active class */
+button:active{
+    background-color: pink;
+}
+p:active{
+    color: blueviolet;
+}
+/* 11.cheked class */
+input[type="radio"]:checked + label{
+    color:red;
+}
+
+/* 12.nth-of-type */
+#a:nth-of-type(2){
+    background-color: blue;
+}
+div:nth-of-type(2n){
+    background-color: blue;
+}
+/* 13.Psuedo element */
+h1::first-letter{
+    color: black;
+}
+#myid::first-line{
+    color:orange;
+}
+/* 14.selection */
+p::selection{
+  
+    background-color:yellowgreen;
+}
+/* 15.Cascading */
+h3{
+    background-color: yellow;
+}
+h3{
+    background-color: purple;
+}
